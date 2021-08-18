@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "13224934009",
+    "project_id": "contasmvvm",
+    "storage_bucket": "contasmvvm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:13224934009:android:a8941fc5296f49743d32a8",
+        "android_client_info": {
+          "package_name": "com.example.contasmvvm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "13224934009-aaommeg55rr3h5hlftf76som7mjhv58t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnynwRN_9W1InaeK77pem2s0e7bzWpHso"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "13224934009-aaommeg55rr3h5hlftf76som7mjhv58t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
