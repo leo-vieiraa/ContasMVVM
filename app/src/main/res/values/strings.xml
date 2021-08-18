@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">ContasMVVM</string>
+    <string name="new_user">Novo Usuário</string>
+    <string name="criar_user">Criar Usuário</string>
+    <string name="autenticar">Autenticar</string>
+    <string name="login">Login</string>
+    <string name="cirar_uma_nova_conta_aqui">Crie uma nova conta</string>
 </resources>
