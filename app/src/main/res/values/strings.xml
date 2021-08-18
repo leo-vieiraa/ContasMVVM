@@ -4,5 +4,8 @@
     <string name="criar_user">Criar Usuário</string>
     <string name="autenticar">Autenticar</string>
     <string name="login">Login</string>
-    <string name="cirar_uma_nova_conta_aqui">Crie uma nova conta</string>
+    <string name="cirar_uma_nova_conta_aqui">Crie uma nova bill</string>
+    <string name="save">Salvar</string>
+    <string name="value">Valor</string>
+    <string name="bill">Conta</string>
 </resources>
