@@ -8,4 +8,7 @@
     <string name="save">Salvar</string>
     <string name="value">Valor</string>
     <string name="bill">Conta</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="title_activity_detail">Detail Activity</string>
 </resources>

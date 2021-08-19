@@ -16,7 +16,7 @@ class ContentViewModel : ViewModel() {
 
     val billsRepository = BillRepository()
 
-    fun fetchContas() {
+    fun fetchBills() {
         billsRepository.fetchBills { contas, error ->
             if (error != null) {
                 _error.value = error
@@ -27,13 +27,12 @@ class ContentViewModel : ViewModel() {
     }
 
     fun addBill(name: String, price: Double?) {
-        Bill(null, name, price).apply {
-            billsRepository.addBill(this) { bill, error ->
-                if (error != null) {
-                    _error.value = error
-                } else {
-                    fetchContas()
-                }
+        val newBill = Bill(null, name, price)
+        billsRepository.addBill(newBill) { _, error ->
+            if (error != null) {
+                _error.value = error
+            } else {
+                fetchBills()
             }
         }
     }

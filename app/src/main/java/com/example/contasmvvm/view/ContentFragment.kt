@@ -1,5 +1,6 @@
 package com.example.contasmvvm.view
 
+import android.content.Intent
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -10,6 +11,7 @@ import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+import com.example.contasmvvm.DetailActivity
 import com.example.contasmvvm.R
 import com.example.contasmvvm.adapter.ContasAdapter
 import com.example.contasmvvm.model.Bill
@@ -24,7 +26,13 @@ class ContentFragment : Fragment(R.layout.content_fragment) {
     private lateinit var viewModel: ContentViewModel
     private lateinit var recyclerView: RecyclerView
     private lateinit var swipeRefreshLayout: SwipeRefreshLayout
-    private val adapter = ContasAdapter()
+    private val adapter = ContasAdapter() {
+
+        Intent(requireContext(), DetailActivity::class.java).apply {
+//            putExtras("bill_id", )
+            startActivity(this)
+        }
+    }
 
     val observerContas = Observer<List<Bill>> {
         adapter.refresh(it)
@@ -67,7 +75,7 @@ class ContentFragment : Fragment(R.layout.content_fragment) {
 
     fun loadData() {
         swipeRefreshLayout.isRefreshing = true
-        viewModel.fetchContas()
+        viewModel.fetchBills()
     }
 
 }
